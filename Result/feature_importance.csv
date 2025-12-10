@@ -1,0 +1,12 @@
+Feature,Importance
+time,0.36122522
+catalyst_loading,0.28730595
+steric_hindrance,0.07452304
+metal_encoded,0.0629953
+temperature,0.052690417
+leaving_group_encoded,0.049141902
+electronic_effect,0.04199823
+base_encoded,0.020349007
+ligand_encoded,0.019659383
+solvent_encoded,0.016322188
+substrate_type_encoded,0.013789345

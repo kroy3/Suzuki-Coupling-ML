@@ -1,0 +1,132 @@
+
+FIGURE CAPTIONS FOR CHEMRXIV SUBMISSION
+========================================
+
+Figure 1. Machine learning model performance benchmarking.
+(a) R² comparison with literature showing XGBoost performance relative to YieldBERT 
+(Schwaller et al., 2021), YieldGNN (Saebi et al., 2023), and Cronin neural network 
+(Steiner et al., 2019). (b) Root mean square error (RMSE) comparison across four 
+traditional ML architectures. (c) Predicted vs. actual yields visualization using 
+hexbin density plot (n = 1,728 test reactions; R² = 0.903, RMSE = 6.10%). 
+(d) Five-fold cross-validation results demonstrating model robustness (error bars 
+represent standard deviation across folds).
+
+Figure 2. Comprehensive metal catalyst performance analysis.
+(a) Yield distributions across five metal catalysts (Ni, Pd, Ru, Fe, Cu) shown as 
+violin plots with embedded box plots. Horizontal dashed line indicates success 
+threshold (50% yield). (b) Success rates (percentage of reactions achieving >50% yield) 
+with bootstrap 95% confidence intervals (n = 1,000 iterations). Star (★) indicates 
+statistically significant difference (p < 0.01). (c) Leaving group compatibility 
+heatmap showing mean yields for all metal-leaving group combinations. Red dashed box 
+highlights nickel's superior performance with chloride substrates (47% vs. 39% for 
+palladium). (d) Cost-performance scatter plot with Pareto frontier (red dashed line). 
+Marker size proportional to success rate. Note 467-fold cost advantage of nickel over 
+palladium ($75K/kg vs. $35M/kg).
+
+Figure 3. Feature importance analysis with chemical interpretation.
+(a) Top 10 features ranked by Random Forest importance using Gini impurity decrease. 
+Color gradient from dark (high importance) to light (low importance). Physical 
+parameters (reaction time, catalyst loading, temperature, steric hindrance) collectively 
+account for 77% of predictive power. Text box highlights physical vs. chemical parameter 
+dominance. (b) Temperature-time interaction heatmap showing synergistic effects. 
+Data binned into 3×3 grid: temperature (low 60-85°C, medium 85-105°C, high 105-130°C) 
+× reaction time (short <8h, medium 8-16h, long >16h). Red dashed box highlights optimal 
+conditions (medium temperature + medium time = 52% mean yield). Text annotation indicates 
+practical guidance for experimentalists.
+
+Figure 4. XGBoost model diagnostics and validation analysis.
+(a) Learning curves showing training set size effect on model performance. Blue line: 
+training R² with confidence band (shaded region). Green line: validation R² with 
+confidence band. Curves converge at ~4,000 training samples, suggesting adequate data 
+for generalization. (b) Predicted vs. actual yields hexbin density plot. Red dashed line 
+represents perfect prediction. Statistics box shows final test set performance 
+(R² = 0.903, RMSE = 6.10%, MAE = 4.81%, n = 1,728). (c) Residual plot (prediction error 
+vs. predicted yield). Horizontal black line at zero represents perfect prediction. 
+Red dotted lines indicate ±10% acceptable error threshold. Green shaded region encompasses 
+99% of predictions. (d) Error distribution histogram with fitted normal curve 
+(black line: μ = 0.2%, σ = 5.9%). Near-normal distribution validates regression assumptions. 
+Text box reports skewness and kurtosis metrics.
+
+Figure 5. Representative Suzuki-Miyaura reactions demonstrating substrate diversity.
+Five example reactions spanning different catalysts, substrates, and yields: (1) Simple 
+aryl bromide with palladium/triphenylphosphine (95% yield), (2) Heteroaryl coupling 
+using XPhos ligand (88% yield), (3) Nickel-catalyzed chloride activation with BINAP 
+ligand (82% yield), (4) Electron-rich aryl substrate with SPhos ligand (93% yield), 
+(5) Iron-catalyzed coupling demonstrating first-row metal feasibility (68% yield). 
+Molecular structures rendered with RDKit. Reaction arrows indicate conditions 
+(metal/ligand combination). Green boxes show final yields.
+
+Figure 6. Suzuki-Miyaura catalytic cycle mechanism.
+Complete catalytic cycle showing four key steps arranged clockwise: (1) Oxidative 
+addition (top, blue): Pd(0) reacts with aryl halide (Ar-X) to form Pd(II) complex 
+with halide departure (X⁻). (2) Transmetalation (right, orange): Boronic acid 
+(Ar'-B(OH)₂) transfers aryl group to palladium, facilitated by base activation, 
+generating borate by-product (B(OH)₃). (3) Reductive elimination (bottom, green): 
+C-C bond formation between two aryl groups with regeneration of Pd(0) catalyst, 
+releasing biaryl product (Ar-Ar'). (4) Pd(0) catalyst regeneration (left, purple): 
+Active catalyst ready for next cycle with ligand coordination (Pd(0)L₂). Red dashed 
+arrows show substrate inputs and green dashed arrow shows product output. Legend box 
+explains arrow types. Key features box lists advantages: mild conditions, broad scope, 
+functional group tolerance, water as by-product. Reaction conditions box provides 
+typical parameters.
+
+Figure 7. Substrate scope demonstrating functional group tolerance.
+Three categories with four examples each: (Left panel) Aryl halides showing leaving 
+group reactivity order: bromide (95% yield), iodide (97%), chloride (75%), and triflate 
+(OTf, 89%). (Middle panel) Electron-donating and electron-withdrawing functional groups: 
+methoxy (93%), amino (87%), methyl (94%), and fluoro (92%). (Right panel) Heteroaromatic 
+substrates: pyrimidine (88%), pyridine (90%), furan (78%), and thiophene (85%). Color 
+coding: green boxes indicate excellent yields (>85%), yellow boxes indicate good yields 
+(75-85%), red boxes indicate moderate yields (<75%). All structures rendered with RDKit 
+showing 2D coordinates.
+
+========================================
+
+SUPPLEMENTARY FIGURES (if creating supplementary PDF):
+
+Figure S1. SHAP (SHapley Additive exPlanations) value analysis.
+Individual feature contributions to model predictions across test set.
+
+Figure S2. Metal-specific performance by substrate class.
+Detailed breakdown of yields for different substrate types (aryl, heteroaryl, vinyl) 
+across five metal catalysts.
+
+Figure S3. Ligand-base compatibility matrix.
+Heatmap showing synergistic effects between different ligand-base combinations.
+
+Figure S4. Extended learning curves.
+Individual learning curves for all four ML models (Random Forest, Gradient Boosting, 
+XGBoost, Neural Network).
+
+========================================
+
+TABLES FOR SUPPLEMENTARY INFORMATION:
+
+Table S1. Complete model hyperparameters.
+Detailed hyperparameters for all machine learning models including optimization results.
+
+Table S2. Statistical comparison of metal catalysts.
+Bootstrap hypothesis testing results (n = 1,000 iterations) for all pairwise metal 
+comparisons.
+
+Table S3. Feature importance complete rankings.
+All 13 features ranked by importance with standard errors.
+
+Table S4. Leaving group compatibility matrix.
+Complete metal × leaving group yield matrix (5 metals × 4 leaving groups = 20 combinations).
+
+Table S5. Temperature-time interaction detailed analysis.
+Complete 3×3 matrix with sample sizes, standard deviations, and confidence intervals.
+
+========================================
+
+NOTES FOR CHEMRXIV SUBMISSION:
+
+1. Upload figures separately (ChemRxiv requirement)
+2. Use Figure 1-7 as primary file names
+3. Include all captions in main manuscript
+4. Supplementary figures can be in separate PDF
+5. All figures are publication quality (300 DPI)
+6. Both PNG and PDF available (use PDF for submission)
+
+========================================
