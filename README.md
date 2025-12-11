@@ -397,11 +397,10 @@ SOFTWARE.
 
 ## 📅 Version History
 
-**v1.0.0** (December 2024)
+**v1.0.0** (December 2025)
 - Initial release
 - Complete dataset (5,760 reactions)
 - 4 trained ML models
-- 7 publication-quality figures
 - Comprehensive documentation
 
 ---
